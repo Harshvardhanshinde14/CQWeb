@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    font-family: 'Poppins' sans-serif;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+
+
+
+h6 {
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+}
+
+
+
+/* Navigation */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding:1vw 8vw;
+    align-items:center;
+    box-shadow:2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+#stickyNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+    nav img {
+        width: 300px;
+        cursor: pointer;
+        align-items:center;
+        
+    }
+
+    nav .navigation ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    nav .navigation ul li {
+        list-style: none;
+        margin-left:30px;
+        transition: transform 0.2s ease-in-out;
+        
+       
+        
+    }
+    nav .navigation ul li:hover {
+        transform: scale(1.1);
+
+    }
+
+     nav .navigation ul li a {
+         text-decoration: none;
+         color: rgb(21, 21, 100);
+         font-size: 20px;
+         font-weight:500;
+         transition: none;
+         
+         
+    }
+
+     nav .navigation ul li a:hover{
+         color:rgb(23, 67, 190);
+       transform: none;
+
+     }
+     nav .fa{
+        display:none;
+    }
+    /* /////Dropdown menucode///// */
+.navigation ul .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fcffff;
+    border: 1px solid #f2d5d5;
+    z-index: 1;
+    text-align: center;
+   
+    
+}
+.navigation ul .dropdown li {
+    padding: 2px;
+    margin: 0;
+    width: 110px;
+    
+    
+}  
+
+
+.navigation ul li:hover .dropdown {
+    display: block;
+}
+.navigation ul .dropdown li a{
+    padding: 0;
+    margin: 0;
+    background-color:none;
+    
+}
+.navigation ul .dropdown {
+    padding-right: 10px;
+    padding-left: 10px;
+    /* font-size: 20px; */
+}
+.navigation ul .dropdown a {
+    display: block;
+    padding: 5px;
+    color: #333;
+    text-decoration: none;
+    
+
+}
+
+.navigation ul .dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+
+
+     @media(max-width:700px) {
+        #about-us h1 {
+            color: white;
+            font-size: 20px;
+        }
+    
+        nav .navigation ul {
+            display:inline-block;
+            margin-right: 10px;
+    
+        }
+        nav .navigation ul li{
+            justify-content:space-between;
+            margin-top: 30px;
+        }
+nav .navigation ul {
+        padding: 20px;
+        
+    }
+.navigation ul .dropdown {
+        margin: 0;
+        padding: 0;
+        height: auto;
+        width: 100px;
+        background-color: yellow;
+        
+
+    }
+    .navigation ul .dropdown li {
+        padding: 2px;
+        margin: 0;
+        width: auto;
+        
+    }  
+            
+            nav .navigation {
+                position: absolute;
+                background-color: #f44336;
+                height: 100vh;
+                width: 200px;
+                top: 0;
+                right: -200px;
+                text-align: left;
+                z-index: 2;
+                transition:1s;
+               
+            }
+    
+            nav .navigation ul li a:hover {
+                color: white;
+                
+            }
+        nav .fa {
+            display: block;
+            color:black;
+            margin:10px;
+            font-size:22px;
+            cursor:pointer;
+        }
+        nav .navigation ul {
+            padding: 30px;
+            
+        }
+        .KrossXinfo img {
+            width: 80%; 
+            display: block;
+            margin: 0 auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    
+        .infoList1 {
+            margin-left: 0;
+            text-align: center;
+            font-size: 18px;
+            padding: 20px;
+        }
+    
+        .infoList1 ul {
+            padding-left: 20px;
+            text-align: left; /* Align the text to the left */
+        }
+    
+        .infoList1 ul li {
+            margin-bottom: 10px;
+        }
+        div.infoList1{
+            margin: 0;
+        }
+    }
+     
+#heading {
+    
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    background-color: #BDBBB6;
+}
+.KrossXinfo img {
+    width: 50%; /* Sets the width of the image to 50% of its container */
+    display: block; /* Makes the image a block element for proper centering */
+    margin: 0 auto; /* Automatically centers the image horizontally */
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.infoList1{
+    margin-left: 400px;
+    font-size: 18px; 
+}
+#point {
+    
+    margin-top: 20px; /* Adds a top margin of 20px */
+}
+.content-space {
+    height: 122px; /* Height of the fixed navigation bar */
+}
+footer {
+    background-color: white;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  @media (max-width: 700px) {
+    footer p {
+        text-align: center;
+    }
+  }
